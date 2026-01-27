@@ -47,16 +47,16 @@ export type LeadWithRelations = {
   id: string;
   name: string;
   email: string;
-  phone?: string;
+  phone?: string | null;
   source: string;
   status: string;
   priority: string;
-  budget?: number;
-  message?: string;
+  budget?: number | null;
+  message?: string | null;
   score: number;
   createdAt: string;
-  assignedAgent?: { id: string; name: string; avatarUrl?: string };
-  property?: { id: string; title: string; slug: string };
+  assignedAgent?: { id: string; name: string; avatarUrl?: string } | null;
+  property?: { id: string; title: string; slug: string } | null;
   notes: { id: string; content: string; authorName: string; createdAt: string }[];
 };
 
