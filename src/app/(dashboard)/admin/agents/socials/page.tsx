@@ -1,5 +1,6 @@
 import { Metadata } from "next";
 import { SocialsDashboard } from "@/components/agents/socials-dashboard";
+import { PhotoPreviewGrid } from "@/components/agents/photo-preview-grid";
 
 export const metadata: Metadata = {
   title: "Socials Agent",
@@ -80,6 +81,10 @@ export default async function SocialsAgentPage() {
           + Generate Post
         </button>
       </div>
+      {/* AI Photo Preview Grid */}
+      <PhotoPreviewGrid />
+
+      {/* Scheduled & Published Posts */}
       <SocialsDashboard stats={data.stats} posts={data.posts} />
     </div>
   );

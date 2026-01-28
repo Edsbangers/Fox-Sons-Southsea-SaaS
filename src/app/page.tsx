@@ -7,6 +7,8 @@ import { LocalAreaGuide } from "@/components/landing/local-area-guide";
 import { CTASection } from "@/components/landing/cta-section";
 import { SiteHeader } from "@/components/landing/site-header";
 import { SiteFooter } from "@/components/landing/site-footer";
+import { MarketInsights, marketInsightsSchema } from "@/components/landing/market-insights";
+import { LeadGenWidget } from "@/components/landing/lead-gen-widget";
 
 export const metadata: Metadata = {
   title: "Fox & Sons Southsea | Premium Estate Agents in Portsmouth",
@@ -172,6 +174,10 @@ function JsonLd() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(marketInsightsSchema) }}
+      />
     </>
   );
 }
@@ -185,11 +191,13 @@ export default function HomePage() {
         <HeroSection />
         <TrustSignals />
         <FeaturedProperties />
+        <MarketInsights />
         <AIScoutBanner />
         <LocalAreaGuide />
         <CTASection />
       </main>
       <SiteFooter />
+      <LeadGenWidget />
     </>
   );
 }

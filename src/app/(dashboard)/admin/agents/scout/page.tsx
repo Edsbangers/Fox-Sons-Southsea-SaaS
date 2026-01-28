@@ -16,20 +16,20 @@ async function getScoutData() {
     recentMatches: [
       {
         id: "1",
-        title: "3-bed Victorian, Campbell Road",
-        source: "Council planning portal",
-        matchScore: 94,
+        title: "Planning application: PO5 3LS — Potential 4-bed instruction",
+        source: "Portsmouth City Council Planning Portal",
+        matchScore: 96,
         status: "PENDING" as const,
-        summary: "Recently approved change of use — potential conversion to 3 flats. High yield area.",
-        detectedAt: "12 min ago",
+        summary: "Loft conversion approved for 3-bed to 4-bed. Owner likely to sell post-completion. High value Southsea location.",
+        detectedAt: "8 min ago",
       },
       {
         id: "2",
-        title: "Probate listing — Marmion Road",
+        title: "Probate listing — Marmion Road PO5",
         source: "Local solicitor network",
         matchScore: 88,
         status: "PENDING" as const,
-        summary: "4-bed semi-detached, executor sale likely. Below market value opportunity for investors.",
+        summary: "4-bed semi-detached, executor sale likely. Below market value opportunity. Matches 3 registered buyers.",
         detectedAt: "2 hours ago",
       },
       {
